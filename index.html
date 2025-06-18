@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Akshay Patil - Full Resume</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body { 
+            margin: 0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f4f4; 
+            color: #333; 
+            line-height: 1.6;
+        }
+        
+        .sidebar { 
+            min-width: 220px; 
+            background-color: #2c3e50; 
+            color: white; 
+            height: 100vh; 
+            position: fixed; 
+            top: 0;
+            left: 0;
+            padding-top: 30px; 
+            overflow-y: auto; 
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .sidebar img { 
+            display: block; 
+            margin: 0 auto 20px auto; 
+            border-radius: 50%; 
+            width: 120px; 
+            height: 120px; 
+            object-fit: cover; 
+            border: 3px solid white; 
+        }
+        
+        .sidebar a { 
+            display: block; 
+            color: white; 
+            padding: 15px; 
+            text-decoration: none; 
+            transition: background-color 0.3s ease; 
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .sidebar a:hover { 
+            background-color: #34495e; 
+        }
+        
+        .main-content { 
+            margin-left: 220px; 
+            padding: 20px; 
+            min-height: 100vh;
+        }
+        
+        header { 
+            background-color: #34495e; 
+            color: white; 
+            padding: 30px 20px; 
+            text-align: center; 
+            border-radius: 10px; 
+            margin-bottom: 20px;
+        }
+        
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        
+        header p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        
+        header a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        header a:hover {
+            text-decoration: underline;
+        }
+        
+        section { 
+            background: white; 
+            padding: 30px; 
+            margin: 20px 0; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+        
+        h2 { 
+            color: #2c3e50; 
+            border-bottom: 2px solid #ecf0f1; 
+            padding-bottom: 10px; 
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        a { 
+            color: #2980b9; 
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        ul { 
+            list-style-type: disc; 
+            margin-left: 20px; 
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        footer { 
+            text-align: center; 
+            padding: 20px; 
+            background: #34495e; 
+            color: white; 
+            border-radius: 10px; 
+            margin-top: 40px;
+        }
+        
+        .menu-toggle { 
+            display: none; 
+            background-color: #2c3e50; 
+            color: white; 
+            padding: 15px 20px; 
+            cursor: pointer; 
+            font-size: 18px; 
+            border: none; 
+            width: 100%;
+            text-align: left;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1001;
+        }
+        
+        .download-button { 
+            display: inline-block; 
+            margin: 20px 15px 0 15px; 
+            padding: 12px 20px; 
+            background-color: #2980b9; 
+            color: white !important; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .download-button:hover {
+            background-color: #1f618d;
+            text-decoration: none;
+        }
+        
+        .profile-placeholder {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        @media (max-width: 768px) { 
+            .sidebar { 
+                transform: translateX(-100%); 
+                position: fixed; 
+                height: 100vh;
+                width: 250px;
+            } 
+            
+            .sidebar.active { 
+                transform: translateX(0); 
+            } 
+            
+            .main-content { 
+                margin-left: 0; 
+                padding-top: 60px;
+            } 
+            
+            .menu-toggle { 
+                display: block; 
+            }
+            
+            header h1 {
+                font-size: 2em;
+            }
+            
+            section {
+                padding: 20px;
+            }
+        }
+        
+        /* Ensure content is visible */
+        .main-content section {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="Toggle Menu">☰ Menu</button>
+    
+    <nav class="sidebar" id="sidebar" role="navigation">
+        <div class="profile-placeholder">AP</div>
+        <a href="#experience">Work Experience</a>
+        <a href="#contributions">Scientific Contributions</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#fields">Fields of Interest</a>
+        <a href="#publications">Research Publications</a>
+        <a href="#projects">Research Projects & Field Campaigns</a>
+        <a href="#grants">Grants</a>
+        <a href="#lectures">Guest Lectures & Workshops</a>
+        <a href="#synergy">Professional Activities</a>
+        <a href="#" class="download-button" onclick="downloadResume()">Download Resume (PDF)</a>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <h1>Dr. Akshay Patil</h1>
+            <p>Email: <a href="mailto:akshapatil1989@gmail.com">akshapatil1989@gmail.com</a> | 
+               <a href="https://www.linkedin.com/in/dr-akshay-patil-phd-7185331a/" target="_blank" rel="noopener">LinkedIn</a> | 
+               <a href="https://orcid.org/0000-0001-5445-2107" target="_blank" rel="noopener">ORCID</a></p>
+        </header>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Senior SAR Specialist</strong> | Solafune Inc. (Nov 2024 - Present)</li>
+                <li><strong>Remote Sensing Scientist</strong> | AiDASH Inc. (March 2021 - Oct 2024)</li>
+                <li><strong>Junior Research Fellow</strong> | IIT Bombay (Aug 2015 - Jul 2016)</li>
+                <li><strong>Teaching Assistant</strong> | CSRE, IITB (Aug 2016 - Jul 2019)</li>
+                <li><strong>Teaching Assistant</strong> | Monash University (Aug 2019 - Aug 2020)</li>
+                <li><strong>Assistant Professor</strong> | Sandip University (Aug 2014 - Jul 2015)</li>
+            </ul>
+        </section>
+
+        <section id="contributions">
+            <h2>Scientific Contributions</h2>
+            <ul>
+                <li>Developed MST Radar data processing chain in Matlab (data calibration, analytics, visualization, simulations to identify meteor mass disintegration mechanisms).</li>
+                <li>Developed snow parameter retrieval algorithms using SAR data at X- and C-band.</li>
+                <li>Developed flood detection and oil spill detection algorithms using Sentinel-1 time series data.</li>
+                <li>Evaluated multi-source data (optical and time-series) for tree health assessment using Sentinel-2 and Planetscope.</li>
+                <li>Forest biomass retrieval using SAR and optical (stereo-optical and Lidar) data sources.</li>
+                <li>Condition assessments of habitats - wetlands, peatland, and soil.</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python, Matlab, R, JavaScript</li>
+                <li><strong>Tools:</strong> ArcGIS, QGIS, ERDAS Imagine, ENVI, PolSARpro, SARScape, SNAP ESA Toolbox, ISCE, Google Earth Engine</li>
+                <li><strong>Project Management:</strong> Jira, Confluence, Asana</li>
+                <li><strong>Version Control:</strong> GitHub, BitBucket</li>
+                <li><strong>Documentation:</strong> LaTeX, Microsoft Office, Lucidchart</li>
+            </ul>
+        </section>
+
+        <section id="fields">
+            <h2>Fields of Interest</h2>
+            <ul>
+                <li>Snow parameter retrieval using SAR</li>
+                <li>Forest/tree health assessment using optical remote sensing</li>
+                <li>Forest disturbance mapping and precision agriculture</li>
+                <li>Change detection using EO satellites (oil spill, flood, wildfire)</li>
+                <li>SAR and multispectral remote sensing, radar data processing, and electromagnetics</li>
+                <li>Machine learning, deep learning, and geospatial data science</li>
+                <li>InSAR, PolSAR data processing and applications</li>
+            </ul>
+        </section>
+
+        <section id="publications">
+            <h2>Research Publications</h2>
+            <ul>
+                <li><a href="https://ieeexplore.ieee.org/document/9177310" target="_blank" rel="noopener">Snow Water Equivalent Retrieval Using X-Band Polarimetric SAR Data - IEEE TGRS</a></li>
+                <li><a href="https://www.mdpi.com/2072-4292/12/7/1183" target="_blank" rel="noopener">Retrieval of Snow Depth and SWE using Dual Polarization SAR - MDPI Remote Sensing</a></li>
+                <li><a href="https://www.tandfonline.com/doi/full/10.1080/2150704X.2020.1779373" target="_blank" rel="noopener">Snow Depth and SWE Retrieval Using X-Band PolInSAR - Remote Sensing Letters</a></li>
+                <li><a href="https://link.springer.com/article/10.1007/s11038-014-9456-4" target="_blank" rel="noopener">Meteoroid Fragmentation Using MST Radar - Earth, Moon, and Planets</a></li>
+                <li><a href="https://doi.org/10.3390/geosciences13020042" target="_blank" rel="noopener">Dead Sea Halo-Karst Impact on Dike Rehabilitation - Geosciences</a></li>
+                <li><a href="https://www.mdpi.com/2073-4441/12/1/21" target="_blank" rel="noopener">Snowpack Depth Variability in Svalbard Using POLSAR - Water</a></li>
+            </ul>
+
+            <h3>Conference Proceedings</h3>
+            <ul>
+                <li><a href="https://ieeexplore.ieee.org/document/9324621" target="_blank" rel="noopener">Snow Characterization and Avalanche Detection - IGARSS 2020</a></li>
+                <li><a href="https://ieeexplore.ieee.org/document/8900565" target="_blank" rel="noopener">SWE Retrieval Using SAR Data - IGARSS 2019</a></li>
+                <li><a href="https://ieeexplore.ieee.org/abstract/document/8518432" target="_blank" rel="noopener">SWE Estimation Using Sentinel SAR - IGARSS 2018</a></li>
+                <li><a href="https://ieeexplore.ieee.org/document/9323095" target="_blank" rel="noopener">Surging Glacier Dynamics in Tarim Basin - IGARSS 2020</a></li>
+                <li><a href="https://ieeexplore.ieee.org/abstract/document/9323152" target="_blank" rel="noopener">Mass Balance from Velocity Mapping - IGARSS 2020</a></li>
+                <li><a href="https://ieeexplore.ieee.org/abstract/document/9323642" target="_blank" rel="noopener">Forest Above Ground Biomass Estimation - IGARSS 2020</a></li>
+                <li><a href="https://ieeexplore.ieee.org/document/7275042" target="_blank" rel="noopener">Biped Robot Leg Control Using PID - ICETECH 2015</a></li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Research Projects</h2>
+            <ul>
+                <li><strong>NASA Space Apps Challenge:</strong> COVID19-COARSE Analysis (South and Central Asia)</li>
+                <li><strong>PAZ Mission:</strong> SWE Retrieval Using Dual Polarization SAR</li>
+                <li><strong>BRICS Project:</strong> Glacier and Snow/Firn Characteristics Studies in Polar Regions</li>
+                <li><strong>MTech Project:</strong> Meteor Trail Analysis Using MST Radar</li>
+            </ul>
+
+            <h3>Field Campaigns</h3>
+            <ul>
+                <li>Snow field campaigns (2016, 2018, 2020) in Himachal Pradesh, India (PAZ, Sentinel-1A, Sentinel-2, Radarsat-2 overpasses)</li>
+                <li>Forestry field campaigns (2015, 2016) in Uttarakhand and Maharashtra, India for forest parameter and biomass validation</li>
+            </ul>
+        </section>
+
+        <section id="grants">
+            <h2>Grants</h2>
+            <ul>
+                <li>IEEE Geoscience and Remote Sensing Society Travel Grant - IGARSS 2018 (Valencia, Spain)</li>
+                <li>IEEE Geoscience and Remote Sensing Society Travel Grant - IGARSS 2019 (Yokohama, Japan)</li>
+                <li>Monash University Travel Grant - Water Future Conference 2019 (Bangalore, India)</li>
+            </ul>
+        </section>
+
+        <section id="lectures">
+            <h2>Guest Lectures & Workshops</h2>
+            <ul>
+                <li><strong>IIT Bombay:</strong> Solving Industry Use Cases with AI and Remote Sensing</li>
+                <li><strong>IIT Indore:</strong> Real-time Industry Applications through Remote Sensing</li>
+                <li><strong>IIT Indore:</strong> Drone Application in Remote Sensing</li>
+                <li><strong>VIT Vellore:</strong> Applications of Remote Sensing, GIS, and AI in Industries</li>
+                <li><strong>GalaxEye, Bangalore:</strong> Real-Time Insights from the Sky: Unleashing SAR Potential</li>
+                <li><strong>WRSC-2023 Workshop, Mumbai:</strong> Remote Sensing of Cryosphere</li>
+            </ul>
+        </section>
+
+        <section id="synergy">
+            <h2>Professional Memberships, Certifications & Synergistic Activities</h2>
+            <ul>
+                <li><strong>Reviewer:</strong> IEEE TGRS, IJRS, Remote Sensing Letters, IEEE JSTARS, Journal of Indian Society of Remote Sensing, Remote Sensing Letters, Photonirvachak</li>
+                <li><strong>IEEE GRSS Student Member</strong> (Since 2017)</li>
+                <li><strong>Certifications:</strong> Disaster Management, Basics of JavaScript Web Apps, Getting Started with GIS, Python for Everyone, Python OOP (Udemy), GEOINT Professional Certification, Hyper EDU Certificate</li>
+                <li><strong>Workshops:</strong> Microwave Remote Sensing Workshop - IIT Bombay (2015)</li>
+                <li><strong>Organizer:</strong> Circuit Debugging, MET-EORITE 2010, Nashik, India</li>
+                <li><strong>Second Prize:</strong> Circuit Junkies, Pune, India</li>
+                <li><strong>Exhibitor:</strong> Techfest-Techconnect 2020, IIT Bombay</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Dr. Akshay Patil</p>
+        </footer>
+    </main>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+        
+        function downloadResume() {
+            // Since PDF might not be available, show a message
+            alert('PDF download functionality needs to be implemented. Please ensure resume_akshay.pdf is available in the same directory.');
+        }
+        
+        // Close sidebar when clicking on main content on mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainContent = document.querySelector('.main-content');
+            const sidebar = document.getElementById('sidebar');
+            
+            mainContent.addEventListener('click', function() {
+                if (window.innerWidth <= 768 && sidebar.classList.contains('active')) {
+                    sidebar.classList.remove('active');
+                }
+            });
+            
+            // Close sidebar when clicking on navigation links on mobile
+            const sidebarLinks = document.querySelectorAll('.sidebar a[href^="#"]');
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        sidebar.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
