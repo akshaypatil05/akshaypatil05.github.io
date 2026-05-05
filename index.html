@@ -1,418 +1,1449 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Akshay Patil - Full Resume</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        body { 
-            margin: 0; 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: #f4f4f4; 
-            color: #333; 
-            line-height: 1.6;
-        }
-        
-        .sidebar { 
-            width: 220px; 
-            background-color: #2c3e50; 
-            color: white; 
-            height: 100vh; 
-            position: fixed; 
-            top: 0;
-            left: 0;
-            padding: 60px 0 0 0; 
-            overflow-y: auto; 
-            transition: transform 0.3s ease;
-            z-index: 1000;
-        }
-        
-        .sidebar img { 
-            display: block; 
-            margin: 0 auto 20px auto; 
-            border-radius: 50%; 
-            width: 120px; 
-            height: 120px; 
-            object-fit: cover; 
-            border: 3px solid white; 
-        }
-        
-        .sidebar a { 
-            display: block; 
-            color: white; 
-            padding: 15px 20px; 
-            text-decoration: none; 
-            transition: background-color 0.3s ease; 
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            text-align: left;
-        }
-        
-        .sidebar a:hover { 
-            background-color: #34495e; 
-        }
-        
-        .main-content { 
-            margin-left: 220px; 
-            padding: 60px 20px 20px 20px; 
-            min-height: 100vh;
-        }
-        
-        header { 
-            background-color: #34495e; 
-            color: white; 
-            padding: 30px 20px; 
-            text-align: center; 
-            border-radius: 10px; 
-            margin-bottom: 20px;
-        }
-        
-        header h1 {
-            margin: 0 0 10px 0;
-            font-size: 2.5em;
-            font-weight: 300;
-        }
-        
-        header p {
-            margin: 0;
-            font-size: 1.1em;
-        }
-        
-        header a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        
-        header a:hover {
-            text-decoration: underline;
-        }
-        
-        section { 
-            background: white; 
-            padding: 30px; 
-            margin: 20px 0; 
-            border-radius: 10px; 
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
-        }
-        
-        h2 { 
-            color: #2c3e50; 
-            border-bottom: 2px solid #ecf0f1; 
-            padding-bottom: 10px; 
-            margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-        }
-        
-        h3 {
-            color: #34495e;
-            margin-top: 25px;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
-        
-        a { 
-            color: #2980b9; 
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        ul { 
-            list-style-type: disc; 
-            margin-left: 20px; 
-            padding-left: 0;
-        }
-        
-        li {
-            margin-bottom: 8px;
-            line-height: 1.6;
-        }
-        
-        footer { 
-            text-align: center; 
-            padding: 20px; 
-            background: #34495e; 
-            color: white; 
-            border-radius: 10px; 
-            margin-top: 40px;
-        }
-        
-        .menu-toggle { 
-            display: block; 
-            background-color: #2c3e50; 
-            color: white; 
-            padding: 15px 20px; 
-            cursor: pointer; 
-            font-size: 18px; 
-            border: none; 
-            width: 100%;
-            text-align: left;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1001;
-        }
-        
-        .download-button { 
-            display: block; 
-            margin: 20px; 
-            padding: 12px 20px; 
-            background-color: #2980b9; 
-            color: white !important; 
-            text-decoration: none; 
-            border-radius: 5px; 
-            text-align: center;
-            transition: background-color 0.3s ease;
-        }
-        
-        .download-button:hover {
-            background-color: #1f618d;
-            text-decoration: none;
-        }
-        
-        .profile-placeholder {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 48px;
-            font-weight: bold;
-            color: white;
-            width: 100%;
-            height: 120px;
-            margin: 30px 0 20px 0;
-        }
-        
-        @media (max-width: 768px) { 
-            .sidebar { 
-                transform: translateX(-100%); 
-                position: fixed; 
-                height: 100vh;
-                width: 220px;
-                padding-top: 60px;
-            } 
-            
-            .sidebar.active { 
-                transform: translateX(0); 
-            } 
-            
-            .main-content { 
-                margin-left: 0; 
-                padding-top: 60px;
-            } 
-            
-            header h1 {
-                font-size: 2em;
-            }
-            
-            section {
-                padding: 20px;
-            }
-        }
-        
-        /* Ensure content is visible */
-        .main-content section {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Akshay Patil — Remote Sensing Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0a1628;
+      --navy-mid: #112240;
+      --navy-light: #1d3461;
+      --teal: #0ee6c4;
+      --teal-dim: rgba(14,230,196,0.15);
+      --teal-glow: rgba(14,230,196,0.4);
+      --gold: #f5c842;
+      --white: #e8edf5;
+      --muted: #8899b4;
+      --card-bg: rgba(17,34,64,0.85);
+      --border: rgba(14,230,196,0.15);
+      --sidebar-w: 240px;
+      --font-display: 'Playfair Display', serif;
+      --font-body: 'DM Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--navy);
+      color: var(--white);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* Starfield background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse at 20% 50%, rgba(14,230,196,0.04) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(245,200,66,0.04) 0%, transparent 50%),
+        var(--navy);
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar {
+      width: var(--sidebar-w);
+      background: var(--navy-mid);
+      border-right: 1px solid var(--border);
+      position: fixed;
+      top: 0; left: 0;
+      height: 100vh;
+      overflow-y: auto;
+      z-index: 900;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+      transition: transform 0.35s cubic-bezier(.4,0,.2,1);
+    }
+
+    .sidebar-logo {
+      padding: 28px 20px 20px;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .avatar-wrap {
+      position: relative;
+      width: 90px; height: 90px;
+      margin: 0 auto 12px;
+    }
+
+    .avatar-wrap::after {
+      content: '';
+      position: absolute;
+      inset: -3px;
+      border-radius: 50%;
+      background: conic-gradient(var(--teal), var(--gold), var(--teal));
+      z-index: -1;
+      animation: spin 6s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .avatar-img {
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      background: var(--navy-light);
+      border: 3px solid var(--navy-mid);
+    }
+
+    .avatar-placeholder {
+      width: 90px; height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy-light), var(--navy-mid));
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--teal);
+      border: 3px solid var(--navy-mid);
+    }
+
+    .sidebar-name {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.3;
+    }
+
+    .sidebar-title {
+      font-size: 0.7rem;
+      color: var(--teal);
+      margin-top: 4px;
+      font-family: var(--font-mono);
+      letter-spacing: 0.05em;
+    }
+
+    .nav-section-label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      text-transform: uppercase;
+      padding: 16px 18px 6px;
+    }
+
+    .sidebar nav a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      padding: 9px 18px;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      border-left: 2px solid transparent;
+    }
+
+    .sidebar nav a:hover, .sidebar nav a.active {
+      color: var(--teal);
+      border-left-color: var(--teal);
+      background: var(--teal-dim);
+    }
+
+    .sidebar nav a .nav-icon { font-size: 1rem; width: 18px; text-align: center; }
+
+    .sidebar-cta {
+      margin: 14px 16px 0;
+      padding: 10px 14px;
+      background: var(--teal);
+      color: var(--navy);
+      border-radius: 6px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-decoration: none;
+      display: block;
+      transition: opacity 0.2s;
+    }
+
+    .sidebar-cta:hover { opacity: 0.85; }
+
+    /* ── MAIN ── */
+    .main {
+      margin-left: var(--sidebar-w);
+      padding: 0 32px 60px;
+      max-width: calc(100% - var(--sidebar-w));
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 70px 0 50px;
+      position: relative;
+    }
+
+    .hero-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--teal);
+      letter-spacing: 0.15em;
+      margin-bottom: 12px;
+    }
+
+    .hero-name {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 900;
+      line-height: 1.1;
+      background: linear-gradient(135deg, var(--white) 40%, var(--teal) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 14px;
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin-bottom: 28px;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-family: var(--font-mono);
+      transition: all 0.2s;
+      background: var(--card-bg);
+    }
+
+    .hero-link:hover {
+      border-color: var(--teal);
+      color: var(--teal);
+      background: var(--teal-dim);
+    }
+
+    /* ── SECTION ── */
+    .section {
+      padding: 60px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+
+    .section-num {
+      font-family: var(--font-mono);
+      color: var(--teal);
+      font-size: 0.8rem;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── CARD ── */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+      backdrop-filter: blur(8px);
+      transition: border-color 0.25s, transform 0.25s;
+    }
+
+    .card:hover {
+      border-color: var(--teal-glow);
+      transform: translateY(-2px);
+    }
+
+    /* ── ABOUT ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .about-stat {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .about-stat .num {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      color: var(--teal);
+      font-weight: 700;
+    }
+
+    .about-stat .label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .about-text {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    /* ── TIMELINE (Education & Experience) ── */
+    .timeline { position: relative; }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 14px; top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--teal), transparent);
+    }
+
+    .timeline-item {
+      padding-left: 48px;
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 6px; top: 6px;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      border: 2px solid var(--teal);
+      background: var(--navy);
+    }
+
+    .tl-date {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--teal);
+      letter-spacing: 0.1em;
+      margin-bottom: 4px;
+    }
+
+    .tl-role {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--white);
+    }
+
+    .tl-org {
+      color: var(--gold);
+      font-size: 0.88rem;
+      margin-bottom: 6px;
+    }
+
+    .tl-desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    /* ── SKILLS ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .skill-cat-title {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--teal);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .skill-tags {
+      display: flex; flex-wrap: wrap; gap: 8px;
+    }
+
+    .skill-tag {
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-size: 0.78rem;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-family: var(--font-mono);
+      transition: all 0.2s;
+    }
+
+    .skill-tag:hover {
+      border-color: var(--teal);
+      color: var(--teal);
+    }
+
+    /* ── PAPERS ── */
+    .paper-item {
+      padding: 20px 24px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 12px;
+      background: var(--card-bg);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .paper-item:hover {
+      border-color: var(--teal-glow);
+      transform: translateY(-1px);
+    }
+
+    .paper-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .paper-title a { color: inherit; text-decoration: none; }
+    .paper-title a:hover { color: var(--teal); }
+
+    .paper-meta {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--teal);
+      margin-bottom: 4px;
+    }
+
+    .paper-desc {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .paper-badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 100px;
+      font-size: 0.68rem;
+      font-family: var(--font-mono);
+      background: var(--teal-dim);
+      color: var(--teal);
+      border: 1px solid var(--teal);
+      margin-right: 6px;
+    }
+
+    /* ── GALLERY ── */
+    .gallery-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .gallery-tab {
+      padding: 7px 18px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      font-size: 0.8rem;
+      font-family: var(--font-mono);
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.2s;
+      background: var(--card-bg);
+    }
+
+    .gallery-tab.active, .gallery-tab:hover {
+      border-color: var(--teal);
+      color: var(--teal);
+      background: var(--teal-dim);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .gallery-item {
+      border-radius: 10px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.25s, border-color 0.25s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.02);
+      border-color: var(--teal);
+    }
+
+    .gallery-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.2s;
+    }
+
+    .gallery-placeholder {
+      width: 100%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.75rem;
+      text-align: center;
+      padding: 12px;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--navy-mid), var(--navy-light));
+    }
+
+    .gallery-placeholder .ph-icon { font-size: 1.8rem; }
+
+    .gallery-caption {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 8px 10px;
+      background: linear-gradient(to top, rgba(10,22,40,0.95), transparent);
+      font-size: 0.7rem;
+      color: var(--white);
+    }
+
+    /* ── CONF GALLERY ── */
+    .conf-item {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .conf-photo {
+      aspect-ratio: 1;
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+    }
+
+    .conf-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+    .conf-info .conf-year {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--teal);
+    }
+
+    .conf-info .conf-name {
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .conf-info .conf-detail {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    /* ── PPT / BLOG / THESIS CARDS ── */
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .resource-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px;
+      transition: border-color 0.2s, transform 0.2s;
+      text-decoration: none;
+      display: block;
+    }
+
+    .resource-card:hover {
+      border-color: var(--teal-glow);
+      transform: translateY(-3px);
+    }
+
+    .resource-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .resource-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .resource-sub {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .resource-type {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 2px 10px;
+      border-radius: 100px;
+      font-size: 0.68rem;
+      font-family: var(--font-mono);
+    }
+
+    .type-ppt { background: rgba(245,200,66,0.15); color: var(--gold); border: 1px solid var(--gold); }
+    .type-blog { background: rgba(14,230,196,0.1); color: var(--teal); border: 1px solid var(--teal); }
+    .type-thesis { background: rgba(100,150,255,0.1); color: #6496ff; border: 1px solid #6496ff; }
+
+    /* ── SOCIAL ── */
+    .social-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--card-bg);
+      text-decoration: none;
+      color: var(--white);
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: all 0.25s;
+      min-width: 180px;
+    }
+
+    .social-btn:hover {
+      border-color: var(--teal);
+      background: var(--teal-dim);
+      color: var(--teal);
+    }
+
+    .social-btn .s-icon { font-size: 1.4rem; }
+
+    /* ── LIGHTBOX ── */
+    .lightbox {
+      position: fixed; inset: 0;
+      background: rgba(10,22,40,0.95);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox.open { display: flex; }
+
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 85vh;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .lb-close {
+      position: absolute;
+      top: 20px; right: 24px;
+      font-size: 2rem;
+      color: var(--muted);
+      cursor: pointer;
+      transition: color 0.2s;
+      background: none; border: none;
+    }
+
+    .lb-close:hover { color: var(--white); }
+
+    .lb-caption {
+      position: absolute;
+      bottom: 24px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+      max-width: 600px;
+    }
+
+    /* ── NOTICE UPLOAD BOX ── */
+    .upload-notice {
+      background: var(--teal-dim);
+      border: 1px dashed var(--teal);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+      color: var(--teal);
+      font-family: var(--font-mono);
+    }
+
+    .upload-notice strong { color: var(--white); display: block; margin-bottom: 6px; }
+
+    /* ── HAMBURGER ── */
+    .hamburger {
+      display: none;
+      position: fixed;
+      top: 14px; left: 14px;
+      z-index: 1001;
+      background: var(--navy-mid);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      cursor: pointer;
+      color: var(--white);
+      font-size: 1.1rem;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(10,22,40,0.6);
+      z-index: 800;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .sidebar { transform: translateX(-100%); }
+      .sidebar.open { transform: none; }
+      .hamburger { display: block; }
+      .overlay.show { display: block; }
+      .main { margin-left: 0; padding: 60px 20px 40px; max-width: 100%; }
+      .about-grid { grid-template-columns: 1fr 1fr; }
+      .conf-item { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .about-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .hero-name { font-size: 2rem; }
+      .resource-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
-
 <body>
-    <button class="menu-toggle" onclick="toggleSidebar()" aria-label="Toggle Menu">☰ Menu</button>
-    
-    <nav class="sidebar" id="sidebar" role="navigation">
-        <a href="#experience">Work Experience</a>
-        <a href="#contributions">Scientific Contributions</a>
-        <a href="#skills">Technical Skills</a>
-        <a href="#fields">Fields of Interest</a>
-        <a href="#publications">Research Publications</a>
-        <a href="#projects">Research Projects & Field Campaigns</a>
-        <a href="#grants">Grants</a>
-        <a href="#lectures">Guest Lectures & Workshops</a>
-        <a href="#synergy">Professional Activities</a>
-        <a href="#" class="download-button" onclick="downloadResume()">Download Resume (PDF)</a>
-    </nav>
 
-    <main class="main-content">
-        <header>
-            <h1>Dr. Akshay Patil</h1>
-            <p>Email: <a href="mailto:akshapatil1989@gmail.com">akshapatil1989@gmail.com</a> | 
-               <a href="https://www.linkedin.com/in/dr-akshay-patil-phd-7185331a/" target="_blank" rel="noopener">LinkedIn</a> | 
-               <a href="https://orcid.org/0000-0001-5445-2107" target="_blank" rel="noopener">ORCID</a></p>
-        </header>
+<!-- Hamburger -->
+<button class="hamburger" id="hamburger" aria-label="Open menu">☰</button>
+<div class="overlay" id="overlay"></div>
 
-        <section id="experience">
-            <h2>Work Experience</h2>
-            <ul>
-                <li><strong>Senior SAR Specialist</strong> | Solafune Inc. (Nov 2024 - Present)</li>
-                <li><strong>Remote Sensing Scientist</strong> | AiDASH Inc. (March 2021 - Oct 2024)</li>
-                <li><strong>Junior Research Fellow</strong> | IIT Bombay (Aug 2015 - Jul 2016)</li>
-                <li><strong>Teaching Assistant</strong> | CSRE, IITB (Aug 2016 - Jul 2019)</li>
-                <li><strong>Teaching Assistant</strong> | Monash University (Aug 2019 - Aug 2020)</li>
-                <li><strong>Assistant Professor</strong> | Sandip University (Aug 2014 - Jul 2015)</li>
-            </ul>
-        </section>
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close">✕</button>
+  <img id="lb-img" src="" alt="" />
+  <div class="lb-caption" id="lb-caption"></div>
+</div>
 
-        <section id="contributions">
-            <h2>Scientific Contributions</h2>
-            <ul>
-                <li>Developed MST Radar data processing chain in Matlab (data calibration, analytics, visualization, simulations to identify meteor mass disintegration mechanisms).</li>
-                <li>Developed snow parameter retrieval algorithms using SAR data at X- and C-band.</li>
-                <li>Developed flood detection and oil spill detection algorithms using Sentinel-1 time series data.</li>
-                <li>Evaluated multi-source data (optical and time-series) for tree health assessment using Sentinel-2 and Planetscope.</li>
-                <li>Forest biomass retrieval using SAR and optical (stereo-optical and Lidar) data sources.</li>
-                <li>Condition assessments of habitats - wetlands, peatland, and soil.</li>
-            </ul>
-        </section>
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <div class="avatar-wrap">
+      <!-- Replace 'photos/profile.jpg' with your profile photo filename -->
+      <img class="avatar-img" src="photos/profile.jpg" alt="Dr. Akshay Patil"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="avatar-placeholder" style="display:none;">AP</div>
+    </div>
+    <div class="sidebar-name">Dr. Akshay Patil</div>
+    <div class="sidebar-title">// SAR · Remote Sensing · AI</div>
+  </div>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Programming:</strong> Python, Matlab, R, JavaScript</li>
-                <li><strong>Tools:</strong> ArcGIS, QGIS, ERDAS Imagine, ENVI, PolSARpro, SARScape, SNAP ESA Toolbox, ISCE, Google Earth Engine</li>
-                <li><strong>Project Management:</strong> Jira, Confluence, Asana</li>
-                <li><strong>Version Control:</strong> GitHub, BitBucket</li>
-                <li><strong>Documentation:</strong> LaTeX, Microsoft Office, Lucidchart</li>
-            </ul>
-        </section>
+  <nav>
+    <div class="nav-section-label">Navigation</div>
+    <a href="#about"><span class="nav-icon">👤</span> About</a>
+    <a href="#education"><span class="nav-icon">🎓</span> Education</a>
+    <a href="#experience"><span class="nav-icon">💼</span> Experience</a>
+    <a href="#skills"><span class="nav-icon">🛠</span> Skills</a>
 
-        <section id="fields">
-            <h2>Fields of Interest</h2>
-            <ul>
-                <li>Snow parameter retrieval using SAR</li>
-                <li>Forest/tree health assessment using optical remote sensing</li>
-                <li>Forest disturbance mapping and precision agriculture</li>
-                <li>Change detection using EO satellites (oil spill, flood, wildfire)</li>
-                <li>SAR and multispectral remote sensing, radar data processing, and electromagnetics</li>
-                <li>Machine learning, deep learning, and geospatial data science</li>
-                <li>InSAR, PolSAR data processing and applications</li>
-            </ul>
-        </section>
+    <div class="nav-section-label">Research</div>
+    <a href="#papers"><span class="nav-icon">📄</span> Papers</a>
+    <a href="#ppts"><span class="nav-icon">📊</span> Presentations</a>
+    <a href="#thesis"><span class="nav-icon">📚</span> Thesis</a>
+    <a href="#blogs"><span class="nav-icon">✍️</span> Blogs</a>
 
-        <section id="publications">
-            <h2>Research Publications</h2>
-            <ul>
-                <li><a href="https://ieeexplore.ieee.org/document/9177310" target="_blank" rel="noopener">Snow Water Equivalent Retrieval Using X-Band Polarimetric SAR Data - IEEE TGRS</a></li>
-                <li><a href="https://www.mdpi.com/2072-4292/12/7/1183" target="_blank" rel="noopener">Retrieval of Snow Depth and SWE using Dual Polarization SAR - MDPI Remote Sensing</a></li>
-                <li><a href="https://www.tandfonline.com/doi/full/10.1080/2150704X.2020.1779373" target="_blank" rel="noopener">Snow Depth and SWE Retrieval Using X-Band PolInSAR - Remote Sensing Letters</a></li>
-                <li><a href="https://link.springer.com/article/10.1007/s11038-014-9456-4" target="_blank" rel="noopener">Meteoroid Fragmentation Using MST Radar - Earth, Moon, and Planets</a></li>
-                <li><a href="https://doi.org/10.3390/geosciences13020042" target="_blank" rel="noopener">Dead Sea Halo-Karst Impact on Dike Rehabilitation - Geosciences</a></li>
-                <li><a href="https://www.mdpi.com/2073-4441/12/1/21" target="_blank" rel="noopener">Snowpack Depth Variability in Svalbard Using POLSAR - Water</a></li>
-            </ul>
+    <div class="nav-section-label">Memories</div>
+    <a href="#phd-gallery"><span class="nav-icon">🔬</span> PhD Gallery</a>
+    <a href="#conferences"><span class="nav-icon">🌍</span> Conferences</a>
 
-            <h3>Conference Proceedings</h3>
-            <ul>
-                <li><a href="https://ieeexplore.ieee.org/document/9324621" target="_blank" rel="noopener">Snow Characterization and Avalanche Detection - IGARSS 2020</a></li>
-                <li><a href="https://ieeexplore.ieee.org/document/8900565" target="_blank" rel="noopener">SWE Retrieval Using SAR Data - IGARSS 2019</a></li>
-                <li><a href="https://ieeexplore.ieee.org/abstract/document/8518432" target="_blank" rel="noopener">SWE Estimation Using Sentinel SAR - IGARSS 2018</a></li>
-                <li><a href="https://ieeexplore.ieee.org/document/9323095" target="_blank" rel="noopener">Surging Glacier Dynamics in Tarim Basin - IGARSS 2020</a></li>
-                <li><a href="https://ieeexplore.ieee.org/abstract/document/9323152" target="_blank" rel="noopener">Mass Balance from Velocity Mapping - IGARSS 2020</a></li>
-                <li><a href="https://ieeexplore.ieee.org/abstract/document/9323642" target="_blank" rel="noopener">Forest Above Ground Biomass Estimation - IGARSS 2020</a></li>
-                <li><a href="https://ieeexplore.ieee.org/document/7275042" target="_blank" rel="noopener">Biped Robot Leg Control Using PID - ICETECH 2015</a></li>
-            </ul>
-        </section>
+    <div class="nav-section-label">Connect</div>
+    <a href="#social"><span class="nav-icon">🔗</span> Social Media</a>
+  </nav>
 
-        <section id="projects">
-            <h2>Research Projects</h2>
-            <ul>
-                <li><strong>NASA Space Apps Challenge:</strong> COVID19-COARSE Analysis (South and Central Asia)</li>
-                <li><strong>PAZ Mission:</strong> SWE Retrieval Using Dual Polarization SAR</li>
-                <li><strong>BRICS Project:</strong> Glacier and Snow/Firn Characteristics Studies in Polar Regions</li>
-                <li><strong>MTech Project:</strong> Meteor Trail Analysis Using MST Radar</li>
-            </ul>
+  <a href="resume_akshay.pdf" class="sidebar-cta" download>⬇ Download CV (PDF)</a>
+</aside>
 
-            <h3>Field Campaigns</h3>
-            <ul>
-                <li>Snow field campaigns (2016, 2018, 2020) in Himachal Pradesh, India (PAZ, Sentinel-1A, Sentinel-2, Radarsat-2 overpasses)</li>
-                <li>Forestry field campaigns (2015, 2016) in Uttarakhand and Maharashtra, India for forest parameter and biomass validation</li>
-            </ul>
-        </section>
+<!-- MAIN -->
+<main class="main">
 
-        <section id="grants">
-            <h2>Grants</h2>
-            <ul>
-                <li>IEEE Geoscience and Remote Sensing Society Travel Grant - IGARSS 2018 (Valencia, Spain)</li>
-                <li>IEEE Geoscience and Remote Sensing Society Travel Grant - IGARSS 2019 (Yokohama, Japan)</li>
-                <li>Monash University Travel Grant - Water Future Conference 2019 (Bangalore, India)</li>
-            </ul>
-        </section>
+  <!-- HERO -->
+  <div class="hero" id="top">
+    <div class="hero-tag">// Remote Sensing Scientist &amp; SAR Specialist</div>
+    <h1 class="hero-name">Dr. Akshay Patil</h1>
+    <p class="hero-sub">PhD in Remote Sensing · Specializing in SAR, Snow Retrieval, Forest Monitoring &amp; Earth Observation · Currently at Solafune Inc.</p>
+    <div class="hero-links">
+      <a href="mailto:akshapatil1989@gmail.com" class="hero-link">✉ akshapatil1989@gmail.com</a>
+      <a href="https://www.linkedin.com/in/dr-akshay-patil-phd-7185331a/" class="hero-link" target="_blank" rel="noopener">🔗 LinkedIn</a>
+      <a href="https://orcid.org/0000-0001-5445-2107" class="hero-link" target="_blank" rel="noopener">🆔 ORCID</a>
+    </div>
+  </div>
 
-        <section id="lectures">
-            <h2>Guest Lectures & Workshops</h2>
-            <ul>
-                <li><strong>IIT Bombay:</strong> Solving Industry Use Cases with AI and Remote Sensing</li>
-                <li><strong>IIT Indore:</strong> Real-time Industry Applications through Remote Sensing</li>
-                <li><strong>IIT Indore:</strong> Drone Application in Remote Sensing</li>
-                <li><strong>VIT Vellore:</strong> Applications of Remote Sensing, GIS, and AI in Industries</li>
-                <li><strong>GalaxEye, Bangalore:</strong> Real-Time Insights from the Sky: Unleashing SAR Potential</li>
-                <li><strong>WRSC-2023 Workshop, Mumbai:</strong> Remote Sensing of Cryosphere</li>
-            </ul>
-        </section>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <p class="about-text">
+      I am a Remote Sensing Scientist and SAR Specialist with a PhD from IIT Bombay and postdoctoral experience at Monash University, Australia. My research bridges radar physics and machine learning to solve real-world Earth observation problems — from snow hydrology in the Himalayas and Svalbard to forest health monitoring and flood detection.
+    </p>
+    <p class="about-text">
+      I have developed novel algorithms for Snow Water Equivalent (SWE) retrieval using X- and C-band SAR, contributed to international field campaigns, published in IEEE TGRS and MDPI Remote Sensing, and delivered guest lectures at IITs, VIT, and industry events. Currently, I serve as a Senior SAR Specialist at Solafune Inc.
+    </p>
+    <div class="about-grid">
+      <div class="about-stat"><div class="num">6+</div><div class="label">Peer-reviewed Journal Papers</div></div>
+      <div class="about-stat"><div class="num">7+</div><div class="label">Conference Proceedings</div></div>
+      <div class="about-stat"><div class="num">3</div><div class="label">Snow Field Campaigns</div></div>
+      <div class="about-stat"><div class="num">10+</div><div class="label">Years of Research</div></div>
+    </div>
+  </section>
 
-        <section id="synergy">
-            <h2>Professional Memberships, Certifications & Synergistic Activities</h2>
-            <ul>
-                <li><strong>Reviewer:</strong> IEEE TGRS, IJRS, Remote Sensing Letters, IEEE JSTARS, Journal of Indian Society of Remote Sensing, Remote Sensing Letters, Photonirvachak</li>
-                <li><strong>IEEE GRSS Student Member</strong> (Since 2017)</li>
-                <li><strong>Certifications:</strong> Disaster Management, Basics of JavaScript Web Apps, Getting Started with GIS, Python for Everyone, Python OOP (Udemy), GEOINT Professional Certification, Hyper EDU Certificate</li>
-                <li><strong>Workshops:</strong> Microwave Remote Sensing Workshop - IIT Bombay (2015)</li>
-                <li><strong>Organizer:</strong> Circuit Debugging, MET-EORITE 2010, Nashik, India</li>
-                <li><strong>Second Prize:</strong> Circuit Junkies, Pune, India</li>
-                <li><strong>Exhibitor:</strong> Techfest-Techconnect 2020, IIT Bombay</li>
-            </ul>
-        </section>
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Education</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="tl-date">2016 – 2021</div>
+        <div class="tl-role">Doctor of Philosophy (PhD) — Remote Sensing</div>
+        <div class="tl-org">Centre of Studies in Resources Engineering (CSRE), IIT Bombay</div>
+        <div class="tl-desc">Thesis: Snow parameter retrieval using polarimetric SAR. Research included PolSAR, InSAR, snow hydrology, and field campaigns in Himachal Pradesh.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-date">2019 – 2020</div>
+        <div class="tl-role">Postdoctoral Researcher</div>
+        <div class="tl-org">Monash University, Australia</div>
+        <div class="tl-desc">Forest biomass, wetlands, peatland condition assessment; teaching assistant duties.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-date">~2013 – 2015</div>
+        <div class="tl-role">M.Tech — Remote Sensing / Electronics</div>
+        <div class="tl-org">IIT Bombay</div>
+        <div class="tl-desc">MTech project: Meteor trail analysis using MST Radar — Matlab-based data processing chain, calibration and visualization.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-date">Prior to 2013</div>
+        <div class="tl-role">Bachelor of Engineering</div>
+        <div class="tl-org">Electronics Engineering</div>
+        <div class="tl-desc">Foundation in electronics, circuits, embedded systems and signal processing.</div>
+      </div>
+    </div>
+  </section>
 
-        <footer>
-            <p>&copy; 2025 Dr. Akshay Patil</p>
-        </footer>
-    </main>
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="tl-date">Nov 2024 – Present</div>
+        <div class="tl-role">Senior SAR Specialist</div>
+        <div class="tl-org">Solafune Inc.</div>
+        <div class="tl-desc">Advanced SAR data processing, algorithm development and product delivery for satellite imagery analysis.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-date">Mar 2021 – Oct 2024</div>
+        <div class="tl-role">Remote Sensing Scientist</div>
+        <div class="tl-org">AiDASH Inc.</div>
+        <div class="tl-desc">Tree health assessment using Sentinel-2 and PlanetScope; flood and oil-spill detection; forest above-ground biomass retrieval.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-date">Aug 2019 – Aug 2020</div>
+        <div class="tl-role">Teaching Assistant</div>
+        <div class="tl-org">Monash University</div>
+        <div class="tl-desc">Remote sensing and GIS coursework support; field and lab supervision.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-date">Aug 2016 – Jul 2019</div>
+        <div class="tl-role">Teaching Assistant (PhD)</div>
+        <div class="tl-org">CSRE, IIT Bombay</div>
+        <div class="tl-desc">Microwave remote sensing coursework. Conducted labs and tutorials alongside doctoral research.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-date">Aug 2015 – Jul 2016</div>
+        <div class="tl-role">Junior Research Fellow</div>
+        <div class="tl-org">IIT Bombay</div>
+        <div class="tl-desc">SAR-based snow studies; field campaign support in Himalayan regions.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="tl-date">Aug 2014 – Jul 2015</div>
+        <div class="tl-role">Assistant Professor</div>
+        <div class="tl-org">Sandip University</div>
+        <div class="tl-desc">Teaching electronics and communication engineering undergraduate courses.</div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('active');
-        }
-        
-        function downloadResume() {
-            // Since PDF might not be available, show a message
-            alert('PDF download functionality needs to be implemented. Please ensure resume_akshay.pdf is available in the same directory.');
-        }
-        
-        // Close sidebar when clicking on main content on mobile
-        document.addEventListener('DOMContentLoaded', function() {
-            const mainContent = document.querySelector('.main-content');
-            const sidebar = document.getElementById('sidebar');
-            
-            mainContent.addEventListener('click', function() {
-                if (window.innerWidth <= 768 && sidebar.classList.contains('active')) {
-                    sidebar.classList.remove('active');
-                }
-            });
-            
-            // Close sidebar when clicking on navigation links on mobile
-            const sidebarLinks = document.querySelectorAll('.sidebar a[href^="#"]');
-            sidebarLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    if (window.innerWidth <= 768) {
-                        sidebar.classList.remove('active');
-                    }
-                });
-            });
-        });
-    </script>
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="card">
+        <div class="skill-cat-title">Programming</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span><span class="skill-tag">Matlab</span>
+          <span class="skill-tag">R</span><span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">LaTeX</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="skill-cat-title">SAR &amp; Remote Sensing Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">PolSARpro</span><span class="skill-tag">SARScape</span>
+          <span class="skill-tag">SNAP ESA</span><span class="skill-tag">ISCE</span>
+          <span class="skill-tag">ERDAS Imagine</span><span class="skill-tag">ENVI</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="skill-cat-title">GIS &amp; Cloud</div>
+        <div class="skill-tags">
+          <span class="skill-tag">ArcGIS</span><span class="skill-tag">QGIS</span>
+          <span class="skill-tag">Google Earth Engine</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="skill-cat-title">Project &amp; DevOps</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Jira</span><span class="skill-tag">Confluence</span>
+          <span class="skill-tag">Asana</span><span class="skill-tag">GitHub</span>
+          <span class="skill-tag">BitBucket</span><span class="skill-tag">Lucidchart</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="skill-cat-title">Domains</div>
+        <div class="skill-tags">
+          <span class="skill-tag">PolSAR</span><span class="skill-tag">InSAR</span>
+          <span class="skill-tag">SWE Retrieval</span><span class="skill-tag">Flood Detection</span>
+          <span class="skill-tag">Forest Biomass</span><span class="skill-tag">Oil Spill</span>
+          <span class="skill-tag">Deep Learning</span><span class="skill-tag">Geospatial ML</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAPERS -->
+  <section class="section" id="papers">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Research Papers</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <h3 style="color:var(--teal);font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.12em;margin-bottom:16px;">JOURNAL ARTICLES</h3>
+
+    <div class="paper-item">
+      <div class="paper-meta">IEEE TGRS · 2020</div>
+      <div class="paper-title"><a href="https://ieeexplore.ieee.org/document/9177310" target="_blank" rel="noopener">Snow Water Equivalent Retrieval Using X-Band Polarimetric SAR Data</a></div>
+      <div class="paper-desc">Novel SWE retrieval algorithm using X-band PolSAR; validated against field measurements in Himalayan snowpacks.</div>
+      <span class="paper-badge">SAR</span><span class="paper-badge">SWE</span>
+    </div>
+
+    <div class="paper-item">
+      <div class="paper-meta">MDPI Remote Sensing · 2020</div>
+      <div class="paper-title"><a href="https://www.mdpi.com/2072-4292/12/7/1183" target="_blank" rel="noopener">Retrieval of Snow Depth and SWE using Dual Polarization SAR</a></div>
+      <div class="paper-desc">Dual-pol SAR approach for seasonal snowpack characterization.</div>
+      <span class="paper-badge">C-band</span><span class="paper-badge">PolSAR</span>
+    </div>
+
+    <div class="paper-item">
+      <div class="paper-meta">Remote Sensing Letters · 2020</div>
+      <div class="paper-title"><a href="https://www.tandfonline.com/doi/full/10.1080/2150704X.2020.1779373" target="_blank" rel="noopener">Snow Depth and SWE Retrieval Using X-Band PolInSAR</a></div>
+      <div class="paper-desc">Combining polarimetry and interferometry for improved snow depth estimation.</div>
+      <span class="paper-badge">PolInSAR</span>
+    </div>
+
+    <div class="paper-item">
+      <div class="paper-meta">Water · MDPI · 2020</div>
+      <div class="paper-title"><a href="https://www.mdpi.com/2073-4441/12/1/21" target="_blank" rel="noopener">Snowpack Depth Variability in Svalbard Using PolSAR</a></div>
+      <div class="paper-desc">Arctic snowpack variability assessment using polarimetric SAR over Svalbard.</div>
+      <span class="paper-badge">Arctic</span><span class="paper-badge">Svalbard</span>
+    </div>
+
+    <div class="paper-item">
+      <div class="paper-meta">Geosciences · MDPI · 2023</div>
+      <div class="paper-title"><a href="https://doi.org/10.3390/geosciences13020042" target="_blank" rel="noopener">Dead Sea Halo-Karst Impact on Dike Rehabilitation</a></div>
+      <div class="paper-desc">EO-based assessment of halo-karst features in the Dead Sea region affecting infrastructure.</div>
+      <span class="paper-badge">InSAR</span>
+    </div>
+
+    <div class="paper-item">
+      <div class="paper-meta">Earth, Moon, and Planets · Springer</div>
+      <div class="paper-title"><a href="https://link.springer.com/article/10.1007/s11038-014-9456-4" target="_blank" rel="noopener">Meteoroid Fragmentation Using MST Radar</a></div>
+      <div class="paper-desc">Radar-based analysis of meteor mass disintegration mechanisms using MST Radar data.</div>
+      <span class="paper-badge">Radar</span><span class="paper-badge">Meteors</span>
+    </div>
+
+    <h3 style="color:var(--teal);font-family:var(--font-mono);font-size:0.8rem;letter-spacing:0.12em;margin:28px 0 16px;">CONFERENCE PROCEEDINGS</h3>
+
+    <div class="paper-item">
+      <div class="paper-meta">IGARSS 2020 · IEEE</div>
+      <div class="paper-title"><a href="https://ieeexplore.ieee.org/document/9324621" target="_blank" rel="noopener">Snow Characterization and Avalanche Detection</a></div>
+    </div>
+    <div class="paper-item">
+      <div class="paper-meta">IGARSS 2019 · IEEE · Yokohama, Japan</div>
+      <div class="paper-title"><a href="https://ieeexplore.ieee.org/document/8900565" target="_blank" rel="noopener">SWE Retrieval Using SAR Data</a></div>
+    </div>
+    <div class="paper-item">
+      <div class="paper-meta">IGARSS 2018 · IEEE · Valencia, Spain</div>
+      <div class="paper-title"><a href="https://ieeexplore.ieee.org/abstract/document/8518432" target="_blank" rel="noopener">SWE Estimation Using Sentinel SAR</a></div>
+    </div>
+    <div class="paper-item">
+      <div class="paper-meta">IGARSS 2020 · IEEE</div>
+      <div class="paper-title"><a href="https://ieeexplore.ieee.org/document/9323095" target="_blank" rel="noopener">Surging Glacier Dynamics in Tarim Basin</a></div>
+    </div>
+    <div class="paper-item">
+      <div class="paper-meta">IGARSS 2020 · IEEE</div>
+      <div class="paper-title"><a href="https://ieeexplore.ieee.org/abstract/document/9323152" target="_blank" rel="noopener">Mass Balance from Velocity Mapping</a></div>
+    </div>
+    <div class="paper-item">
+      <div class="paper-meta">IGARSS 2020 · IEEE</div>
+      <div class="paper-title"><a href="https://ieeexplore.ieee.org/abstract/document/9323642" target="_blank" rel="noopener">Forest Above Ground Biomass Estimation</a></div>
+    </div>
+  </section>
+
+  <!-- PRESENTATIONS / PPTs -->
+  <section class="section" id="ppts">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Presentations &amp; Talks</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="upload-notice">
+      <strong>📁 How to add your PPT files:</strong>
+      Create a folder called <code>ppts/</code> next to index.html and place your .pptx or .pdf files there. Then update the href links below.
+    </div>
+
+    <div class="resource-grid">
+      <a href="ppts/iit_bombay_sar_ai.pdf" class="resource-card" target="_blank">
+        <span class="resource-icon">📊</span>
+        <div class="resource-title">Solving Industry Use Cases with AI &amp; Remote Sensing</div>
+        <div class="resource-sub">IIT Bombay Guest Lecture</div>
+        <span class="resource-type type-ppt">PPT / PDF</span>
+      </a>
+      <a href="ppts/iit_indore_industry.pdf" class="resource-card" target="_blank">
+        <span class="resource-icon">📊</span>
+        <div class="resource-title">Real-time Industry Applications through Remote Sensing</div>
+        <div class="resource-sub">IIT Indore Guest Lecture</div>
+        <span class="resource-type type-ppt">PPT / PDF</span>
+      </a>
+      <a href="ppts/vit_gis_ai.pdf" class="resource-card" target="_blank">
+        <span class="resource-icon">📊</span>
+        <div class="resource-title">Applications of Remote Sensing, GIS &amp; AI in Industries</div>
+        <div class="resource-sub">VIT Vellore</div>
+        <span class="resource-type type-ppt">PPT / PDF</span>
+      </a>
+      <a href="ppts/galaxeye_sar.pdf" class="resource-card" target="_blank">
+        <span class="resource-icon">📊</span>
+        <div class="resource-title">Real-Time Insights from the Sky: Unleashing SAR Potential</div>
+        <div class="resource-sub">GalaxEye, Bangalore</div>
+        <span class="resource-type type-ppt">PPT / PDF</span>
+      </a>
+      <a href="ppts/wrsc2023_cryosphere.pdf" class="resource-card" target="_blank">
+        <span class="resource-icon">📊</span>
+        <div class="resource-title">Remote Sensing of Cryosphere</div>
+        <div class="resource-sub">WRSC-2023 Workshop, Mumbai</div>
+        <span class="resource-type type-ppt">PPT / PDF</span>
+      </a>
+      <a href="ppts/drone_remote_sensing.pdf" class="resource-card" target="_blank">
+        <span class="resource-icon">📊</span>
+        <div class="resource-title">Drone Application in Remote Sensing</div>
+        <div class="resource-sub">IIT Indore</div>
+        <span class="resource-type type-ppt">PPT / PDF</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- THESIS -->
+  <section class="section" id="thesis">
+    <div class="section-header">
+      <span class="section-num">07</span>
+      <h2 class="section-title">Thesis</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="upload-notice">
+      <strong>📁 How to add your thesis:</strong>
+      Place your thesis PDF as <code>thesis/phd_thesis_akshay_patil.pdf</code> next to index.html, then the link below will work.
+    </div>
+
+    <div class="resource-grid">
+      <a href="thesis/phd_thesis_akshay_patil.pdf" class="resource-card" target="_blank">
+        <span class="resource-icon">📘</span>
+        <div class="resource-title">PhD Thesis — IIT Bombay</div>
+        <div class="resource-sub">Snow Parameter Retrieval Using Polarimetric SAR · CSRE, IIT Bombay · 2021</div>
+        <span class="resource-type type-thesis">Thesis · PDF</span>
+      </a>
+      <a href="thesis/mtech_thesis_akshay_patil.pdf" class="resource-card" target="_blank">
+        <span class="resource-icon">📗</span>
+        <div class="resource-title">M.Tech Thesis — IIT Bombay</div>
+        <div class="resource-sub">Meteor Trail Analysis Using MST Radar · IIT Bombay</div>
+        <span class="resource-type type-thesis">Thesis · PDF</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- BLOGS -->
+  <section class="section" id="blogs">
+    <div class="section-header">
+      <span class="section-num">08</span>
+      <h2 class="section-title">Blogs &amp; Articles</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="upload-notice">
+      <strong>✍️ How to add your blogs:</strong>
+      Update the href links below with your Medium, LinkedIn article, or personal blog post URLs. Add new cards by copying the pattern below.
+    </div>
+
+    <div class="resource-grid">
+      <a href="#" class="resource-card">
+        <span class="resource-icon">✍️</span>
+        <div class="resource-title">Understanding SAR for Snow Hydrology</div>
+        <div class="resource-sub">An introduction to Synthetic Aperture Radar and its applications in snowpack monitoring.</div>
+        <span class="resource-type type-blog">Blog Post</span>
+      </a>
+      <a href="#" class="resource-card">
+        <span class="resource-icon">✍️</span>
+        <div class="resource-title">From Field to Algorithm: Himalayan Snow Campaigns</div>
+        <div class="resource-sub">Behind-the-scenes of conducting SAR validation field campaigns in the Himalayas.</div>
+        <span class="resource-type type-blog">Blog Post</span>
+      </a>
+      <a href="#" class="resource-card">
+        <span class="resource-icon">✍️</span>
+        <div class="resource-title">AI + Remote Sensing: Industry Use Cases</div>
+        <div class="resource-sub">How machine learning is transforming Earth observation from research to product.</div>
+        <span class="resource-type type-blog">Blog Post</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- PhD GALLERY -->
+  <section class="section" id="phd-gallery">
+    <div class="section-header">
+      <span class="section-num">09</span>
+      <h2 class="section-title">PhD Memories</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="upload-notice">
+      <strong>📸 How to add your PhD photos:</strong>
+      Create a folder called <code>photos/phd/</code> next to index.html. Name your photos (e.g. <code>field_2016.jpg</code>, <code>lab.jpg</code>) and update the src values below. Photos will display in a lightbox when clicked.
+    </div>
+
+    <div class="gallery-tabs">
+      <button class="gallery-tab active" onclick="filterGallery('phd', 'all', this)">All</button>
+      <button class="gallery-tab" onclick="filterGallery('phd', 'field', this)">Field Campaigns</button>
+      <button class="gallery-tab" onclick="filterGallery('phd', 'lab', this)">Lab &amp; Research</button>
+      <button class="gallery-tab" onclick="filterGallery('phd', 'campus', this)">Campus Life</button>
+    </div>
+
+    <div class="gallery-grid" id="phd-gallery-grid">
+      <!-- Field campaigns -->
+      <div class="gallery-item" data-cat="field" onclick="openLightbox('photos/phd/field_himachal_2016.jpg','Snow field campaign — Himachal Pradesh, 2016')">
+        <img src="photos/phd/field_himachal_2016.jpg" alt="Field campaign 2016"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="gallery-placeholder" style="display:none;"><span class="ph-icon">🏔️</span><span>Snow Field Campaign<br>Himachal Pradesh · 2016</span></div>
+        <div class="gallery-caption">Snow Campaign · HP · 2016</div>
+      </div>
+
+      <div class="gallery-item" data-cat="field" onclick="openLightbox('photos/phd/field_himachal_2018.jpg','Snow field campaign — Himachal Pradesh, 2018')">
+        <img src="photos/phd/field_himachal_2018.jpg" alt="Field campaign 2018"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="gallery-placeholder" style="display:none;"><span class="ph-icon">❄️</span><span>Snow Field Campaign<br>Himachal Pradesh · 2018</span></div>
+        <div class="gallery-caption">Snow Campaign · HP · 2018</div>
+      </div>
+
+      <div class="gallery-item" data-cat="field" onclick="openLightbox('photos/phd/field_himachal_2020.jpg','Snow field campaign — Himachal Pradesh, 2020')">
+        <img src="photos/phd/field_himachal_2020.jpg" alt="Field campaign 2020"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="gallery-placeholder" style="display:none;"><span class="ph-icon">🌨️</span><span>Snow Field Campaign<br>Himachal Pradesh · 2020</span></div>
+        <div class="gallery-caption">Snow Campaign · HP · 2020</div>
+      </div>
+
+      <div class="gallery-item" data-cat="field" onclick="openLightbox('photos/phd/forest_uttarakhand.jpg','Forest field campaign — Uttarakhand, 2015')">
+        <img src="photos/phd/forest_uttarakhand.jpg" alt="Forest campaign"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="gallery-placeholder" style="display:none;"><span class="ph-icon">🌲</span><span>Forest Campaign<br>Uttarakhand · 2015</span></div>
+        <div class="gallery-caption">Forest Campaign · Uttarakhand</div>
+      </div>
+
+      <!-- Lab -->
+      <div class="gallery-item" data-cat="lab" onclick="openLightbox('photos/phd/lab_iitb.jpg','Remote sensing lab — IIT Bombay')">
+        <img src="photos/phd/lab_iitb.jpg" alt="IIT Bombay lab"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="gallery-placeholder" style="display:none;"><span class="ph-icon">🔬</span><span>Remote Sensing Lab<br>IIT Bombay</span></div>
+        <div class="gallery-caption">CSRE Lab · IITB</div>
+      </div>
+
+      <div class="gallery-item" data-cat="lab" onclick="openLightbox('photos/phd/thesis_defense.jpg','PhD thesis defense — IIT Bombay, 2021')">
+        <img src="photos/phd/thesis_defense.jpg" alt="Thesis defense"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="gallery-placeholder" style="display:none;"><span class="ph-icon">🎓</span><span>PhD Thesis Defense<br>IIT Bombay · 2021</span></div>
+        <div class="gallery-caption">PhD Defense · IITB · 2021</div>
+      </div>
+
+      <!-- Campus -->
+      <div class="gallery-item" data-cat="campus" onclick="openLightbox('photos/phd/campus_iitb.jpg','IIT Bombay campus')">
+        <img src="photos/phd/campus_iitb.jpg" alt="IIT Bombay campus"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="gallery-placeholder" style="display:none;"><span class="ph-icon">🏛️</span><span>IIT Bombay Campus</span></div>
+        <div class="gallery-caption">IIT Bombay Campus</div>
+      </div>
+
+      <div class="gallery-item" data-cat="campus" onclick="openLightbox('photos/phd/monash.jpg','Monash University, Australia')">
+        <img src="photos/phd/monash.jpg" alt="Monash University"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="gallery-placeholder" style="display:none;"><span class="ph-icon">🦘</span><span>Monash University<br>Australia</span></div>
+        <div class="gallery-caption">Monash University · Australia</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFERENCES -->
+  <section class="section" id="conferences">
+    <div class="section-header">
+      <span class="section-num">10</span>
+      <h2 class="section-title">Conference Visits</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="upload-notice">
+      <strong>📸 How to add conference photos:</strong>
+      Create a folder called <code>photos/conferences/</code> and add photos named like <code>igarss2018.jpg</code>, <code>igarss2019.jpg</code>, etc.
+    </div>
+
+    <div class="conf-item card">
+      <div class="conf-photo">
+        <img src="photos/conferences/igarss2018.jpg" alt="IGARSS 2018"
+             onerror="this.style.display='none';this.parentElement.style.background='var(--navy-light)';this.parentElement.innerHTML+='<div style=\'height:100%;display:flex;align-items:center;justify-content:center;font-size:2rem;\'>🇪🇸</div>';" />
+      </div>
+      <div class="conf-info">
+        <div class="conf-year">2018 · IEEE Travel Grant</div>
+        <div class="conf-name">IGARSS 2018 — Valencia, Spain</div>
+        <div class="conf-detail">Presented: SWE Estimation Using Sentinel SAR. Awarded IEEE GRSS Travel Grant to attend and present research on snow water equivalent retrieval methods.</div>
+      </div>
+    </div>
+
+    <div class="conf-item card">
+      <div class="conf-photo">
+        <img src="photos/conferences/igarss2019.jpg" alt="IGARSS 2019"
+             onerror="this.style.display='none';this.parentElement.style.background='var(--navy-light)';this.parentElement.innerHTML+='<div style=\'height:100%;display:flex;align-items:center;justify-content:center;font-size:2rem;\'>🇯🇵</div>';" />
+      </div>
+      <div class="conf-info">
+        <div class="conf-year">2019 · IEEE Travel Grant</div>
+        <div class="conf-name">IGARSS 2019 — Yokohama, Japan</div>
+        <div class="conf-detail">Presented: SWE Retrieval Using SAR Data. Second IEEE GRSS Travel Grant recipient — showcased dual-polarization SAR results for snowpack monitoring.</div>
+      </div>
+    </div>
+
+    <div class="conf-item card">
+      <div class="conf-photo">
+        <img src="photos/conferences/igarss2020.jpg" alt="IGARSS 2020"
+             onerror="this.style.display='none';this.parentElement.style.background='var(--navy-light)';this.parentElement.innerHTML+='<div style=\'height:100%;display:flex;align-items:center;justify-content:center;font-size:2rem;\'>🌐</div>';" />
+      </div>
+      <div class="conf-info">
+        <div class="conf-year">2020 · Virtual</div>
+        <div class="conf-name">IGARSS 2020 — Virtual</div>
+        <div class="conf-detail">Presented 3 papers: Snow Characterization &amp; Avalanche Detection; Surging Glacier Dynamics; Forest Above Ground Biomass. Highly productive year for international contributions.</div>
+      </div>
+    </div>
+
+    <div class="conf-item card">
+      <div class="conf-photo">
+        <img src="photos/conferences/water_future_2019.jpg" alt="Water Future 2019"
+             onerror="this.style.display='none';this.parentElement.style.background='var(--navy-light)';this.parentElement.innerHTML+='<div style=\'height:100%;display:flex;align-items:center;justify-content:center;font-size:2rem;\'>💧</div>';" />
+      </div>
+      <div class="conf-info">
+        <div class="conf-year">2019 · Monash Travel Grant</div>
+        <div class="conf-name">Water Future Conference — Bangalore, India</div>
+        <div class="conf-detail">Attended on Monash University Travel Grant. Presented research on SAR-based snowmelt and water cycle contributions in High Mountain Asia.</div>
+      </div>
+    </div>
+
+    <div class="conf-item card">
+      <div class="conf-photo">
+        <img src="photos/conferences/wrsc2023.jpg" alt="WRSC 2023"
+             onerror="this.style.display='none';this.parentElement.style.background='var(--navy-light)';this.parentElement.innerHTML+='<div style=\'height:100%;display:flex;align-items:center;justify-content:center;font-size:2rem;\'>🌊</div>';" />
+      </div>
+      <div class="conf-info">
+        <div class="conf-year">2023</div>
+        <div class="conf-name">WRSC-2023 Workshop — Mumbai, India</div>
+        <div class="conf-detail">Invited speaker on Remote Sensing of Cryosphere. Presented on SAR-based applications for snowpack monitoring and water resource management.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL -->
+  <section class="section" id="social">
+    <div class="section-header">
+      <span class="section-num">11</span>
+      <h2 class="section-title">Connect &amp; Follow</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="social-grid">
+      <a class="social-btn" href="https://www.linkedin.com/in/dr-akshay-patil-phd-7185331a/" target="_blank" rel="noopener">
+        <span class="s-icon">💼</span> LinkedIn
+      </a>
+      <a class="social-btn" href="https://orcid.org/0000-0001-5445-2107" target="_blank" rel="noopener">
+        <span class="s-icon">🆔</span> ORCID
+      </a>
+      <a class="social-btn" href="https://github.com/" target="_blank" rel="noopener">
+        <span class="s-icon">🐙</span> GitHub
+      </a>
+      <a class="social-btn" href="https://scholar.google.com/" target="_blank" rel="noopener">
+        <span class="s-icon">📖</span> Google Scholar
+      </a>
+      <a class="social-btn" href="https://www.researchgate.net/" target="_blank" rel="noopener">
+        <span class="s-icon">🔬</span> ResearchGate
+      </a>
+      <a class="social-btn" href="https://twitter.com/" target="_blank" rel="noopener">
+        <span class="s-icon">🐦</span> Twitter / X
+      </a>
+      <a class="social-btn" href="https://medium.com/" target="_blank" rel="noopener">
+        <span class="s-icon">✍️</span> Medium
+      </a>
+      <a class="social-btn" href="mailto:akshapatil1989@gmail.com">
+        <span class="s-icon">✉️</span> Email Me
+      </a>
+    </div>
+  </section>
+
+  <footer style="padding:32px 0;border-top:1px solid var(--border);text-align:center;">
+    <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--muted);">
+      © 2025 Dr. Akshay Patil &nbsp;·&nbsp; Built with ❤️ from Bengaluru, India
+    </div>
+  </footer>
+
+</main>
+
+<script>
+  // Hamburger / sidebar
+  const ham = document.getElementById('hamburger');
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+
+  ham.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+    overlay.classList.toggle('show');
+  });
+
+  overlay.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('show');
+  });
+
+  sidebar.querySelectorAll('nav a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (window.innerWidth < 900) {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('show');
+      }
+    });
+  });
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('.section, .hero');
+  const navLinks = document.querySelectorAll('.sidebar nav a');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        const id = e.target.getAttribute('id');
+        const active = document.querySelector(`.sidebar nav a[href="#${id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+
+  sections.forEach(s => observer.observe(s));
+
+  // Lightbox
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lb-img');
+  const lbCap = document.getElementById('lb-caption');
+
+  function openLightbox(src, caption) {
+    lbImg.src = src;
+    lbImg.alt = caption;
+    lbCap.textContent = caption;
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  document.getElementById('lb-close').addEventListener('click', closeLightbox);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLightbox(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  function closeLightbox() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+    lbImg.src = '';
+  }
+
+  // Gallery filter
+  function filterGallery(gallery, cat, btn) {
+    const grid = document.getElementById(gallery + '-gallery-grid');
+    const items = grid.querySelectorAll('.gallery-item');
+    items.forEach(item => {
+      item.style.display = (cat === 'all' || item.dataset.cat === cat) ? 'block' : 'none';
+    });
+    btn.closest('.gallery-tabs').querySelectorAll('.gallery-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
 
 </body>
 </html>
