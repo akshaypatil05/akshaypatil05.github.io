@@ -573,6 +573,44 @@
       color: var(--muted);
     }
 
+    /* ── CONF MULTI-PHOTO STRIP ── */
+    .conf-item-wide {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .conf-photo-strip {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--teal) var(--navy-mid);
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+    }
+
+    .conf-photo-strip::-webkit-scrollbar { height: 4px; }
+    .conf-photo-strip::-webkit-scrollbar-track { background: var(--navy-mid); border-radius: 2px; }
+    .conf-photo-strip::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 2px; }
+
+    .conf-photo-strip img {
+      height: 160px;
+      width: auto;
+      min-width: 120px;
+      max-width: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .conf-photo-strip img:hover {
+      transform: scale(1.02);
+      border-color: var(--teal);
+    }
+
     /* ── PPT / BLOG / THESIS CARDS ── */
     .resource-grid {
       display: grid;
@@ -1054,18 +1092,6 @@
       <div class="paper-meta">IGARSS 2020 · IEEE</div>
       <div class="paper-title"><a href="https://ieeexplore.ieee.org/abstract/document/9323642" target="_blank" rel="noopener">Forest Above Ground Biomass Estimation</a></div>
     </div>
-        <div class="paper-item">
-      <div class="paper-meta">Geosmart India 2024 · IEEE</div>
-      <div class="paper-title"><a href="https://ieeexplore.ieee.org/abstract/document/9323642" target="_blank" rel="noopener">Represented Solafune booth under JAXA fund</a></div>
-    </div>
-    <div class="paper-item">
-      <div class="paper-meta">Thailand Space Expo 2025· IEEE</div>
-      <div class="paper-title"><a href="https://ieeexplore.ieee.org/abstract/document/9323642" target="_blank" rel="noopener"> Three minute pitch deck for Solafune</a></div>
-    </div>
-    <div class="paper-item">
-      <div class="paper-meta">Geo Connect Asia- Singapore 2026 · IEEE</div>
-      <div class="paper-title"><a href="https://ieeexplore.ieee.org/abstract/document/9323642" target="_blank" rel="noopener">Represented Solafune at the conference</a></div>
-    </div>
   </section>
 
   <!-- PRESENTATIONS / PPTs -->
@@ -1076,46 +1102,41 @@
       <div class="section-line"></div>
     </div>
 
-    <div class="upload-notice">
-      <strong>📁 How to add your PPT files:</strong>
-      Create a folder called <code>ppts/</code> next to index.html and place your .pptx or .pdf files there. Then update the href links below.
-    </div>
-
     <div class="resource-grid">
-      <a href="ppts/iit_bombay_sar_ai.pdf" class="resource-card" target="_blank">
+      <a href="https://drive.google.com/drive/folders/1s_9c8ygVoDN4IEc1oNZNRfDtBxkEjlkY?usp=sharing" class="resource-card" target="_blank" rel="noopener">
         <span class="resource-icon">📊</span>
         <div class="resource-title">Solving Industry Use Cases with AI &amp; Remote Sensing</div>
-        <div class="resource-sub">IIT Bombay Guest Lecture</div>
+        <div class="resource-sub">IEEE Guest Lecture</div>
         <span class="resource-type type-ppt">PPT / PDF</span>
       </a>
-      <a href="ppts/iit_indore_industry.pdf" class="resource-card" target="_blank">
+      <a href="https://drive.google.com/drive/folders/1s_9c8ygVoDN4IEc1oNZNRfDtBxkEjlkY?usp=sharing" class="resource-card" target="_blank" rel="noopener">
         <span class="resource-icon">📊</span>
-        <div class="resource-title">Real-time Industry Applications through Remote Sensing</div>
+        <div class="resource-title">Drone Application in Remote Sensing</div>
         <div class="resource-sub">IIT Indore Guest Lecture</div>
         <span class="resource-type type-ppt">PPT / PDF</span>
       </a>
-      <a href="ppts/vit_gis_ai.pdf" class="resource-card" target="_blank">
-        <span class="resource-icon">📊</span>
-        <div class="resource-title">Applications of Remote Sensing, GIS &amp; AI in Industries</div>
-        <div class="resource-sub">VIT Vellore</div>
-        <span class="resource-type type-ppt">PPT / PDF</span>
-      </a>
-      <a href="ppts/galaxeye_sar.pdf" class="resource-card" target="_blank">
+      <a href="https://drive.google.com/drive/folders/1s_9c8ygVoDN4IEc1oNZNRfDtBxkEjlkY?usp=sharing" class="resource-card" target="_blank" rel="noopener">
         <span class="resource-icon">📊</span>
         <div class="resource-title">Real-Time Insights from the Sky: Unleashing SAR Potential</div>
-        <div class="resource-sub">GalaxEye, Bangalore</div>
+        <div class="resource-sub">Lets Talk Spatial Guest Lecture</div>
         <span class="resource-type type-ppt">PPT / PDF</span>
       </a>
-      <a href="ppts/wrsc2023_cryosphere.pdf" class="resource-card" target="_blank">
-        <span class="resource-icon">📊</span>
-        <div class="resource-title">Remote Sensing of Cryosphere</div>
-        <div class="resource-sub">WRSC-2023 Workshop, Mumbai</div>
+      <a href="https://drive.google.com/drive/folders/1s_9c8ygVoDN4IEc1oNZNRfDtBxkEjlkY?usp=sharing" class="resource-card" target="_blank" rel="noopener">
+        <span class="resource-icon">🌌</span>
+        <div class="resource-title">Aurora and Magnetosphere</div>
+        <div class="resource-sub">Helio-Physics Lecture</div>
         <span class="resource-type type-ppt">PPT / PDF</span>
       </a>
-      <a href="ppts/drone_remote_sensing.pdf" class="resource-card" target="_blank">
+      <a href="https://drive.google.com/drive/folders/1s_9c8ygVoDN4IEc1oNZNRfDtBxkEjlkY?usp=sharing" class="resource-card" target="_blank" rel="noopener">
         <span class="resource-icon">📊</span>
-        <div class="resource-title">Drone Application in Remote Sensing</div>
-        <div class="resource-sub">IIT Indore</div>
+        <div class="resource-title">Analysis of Specular Meteor Trails Using Gadanki MST Radar</div>
+        <div class="resource-sub">M.Tech Thesis Presentation</div>
+        <span class="resource-type type-ppt">PPT / PDF</span>
+      </a>
+      <a href="https://drive.google.com/file/d/1Hy9mT6SfQ458UZq2se5bUXz5dcrvEdLv/view?usp=sharing" class="resource-card" target="_blank" rel="noopener">
+        <span class="resource-icon">📘</span>
+        <div class="resource-title">Monitoring Snow Water Equivalent in the Indian Himalayas</div>
+        <div class="resource-sub">PhD Thesis Presentation</div>
         <span class="resource-type type-ppt">PPT / PDF</span>
       </a>
     </div>
@@ -1183,16 +1204,14 @@
       <div class="section-line"></div>
     </div>
 
-    <div class="upload-notice">
-      <strong>📸 How to add your PhD photos:</strong>
-      Create a folder called <code>photos/phd/</code> next to index.html. Name your photos (e.g. <code>field_2016.jpg</code>, <code>lab.jpg</code>) and update the src values below. Photos will display in a lightbox when clicked.
-    </div>
-
-    <div class="gallery-tabs">
-      <button class="gallery-tab active" onclick="filterGallery('phd', 'all', this)">All</button>
-      <button class="gallery-tab" onclick="filterGallery('phd', 'field', this)">Field Campaigns</button>
-      <button class="gallery-tab" onclick="filterGallery('phd', 'lab', this)">Lab &amp; Research</button>
-      <button class="gallery-tab" onclick="filterGallery('phd', 'campus', this)">Campus Life</button>
+    <div style="margin-bottom:24px;">
+      <select id="phd-gallery-select" onchange="filterGallerySelect('phd', this.value)"
+              style="background:var(--card-bg);color:var(--white);border:1px solid var(--border);border-radius:8px;padding:9px 18px;font-family:var(--font-mono);font-size:0.82rem;cursor:pointer;outline:none;min-width:220px;appearance:none;-webkit-appearance:none;background-image:url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'12\' height=\'8\' viewBox=\'0 0 12 8\'><path fill=\'%230ee6c4\' d=\'M6 8L0 0h12z\'/></svg>');background-repeat:no-repeat;background-position:right 14px center;padding-right:36px;">
+        <option value="all">All Photos</option>
+        <option value="field">Field Campaigns</option>
+        <option value="lab">Lab &amp; Research</option>
+        <option value="campus">Campus Life</option>
+      </select>
     </div>
 
     <div class="gallery-grid" id="phd-gallery-grid">
@@ -1223,6 +1242,13 @@
              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
         <div class="gallery-placeholder" style="display:none;"><span class="ph-icon">🌲</span><span>Forest Campaign<br>Uttarakhand · 2015</span></div>
         <div class="gallery-caption">Forest Campaign · Uttarakhand</div>
+      </div>
+
+      <div class="gallery-item" data-cat="field" onclick="openLightbox('photos/phd/chandrapur_forest.jpg','Forest field campaign — Chandrapur')">
+        <img src="photos/phd/chandrapur_forest.jpg" alt="Chandrapur forest campaign"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="gallery-placeholder" style="display:none;"><span class="ph-icon">🌳</span><span>Forest Campaign<br>Chandrapur</span></div>
+        <div class="gallery-caption">Forest Campaign · Chandrapur</div>
       </div>
 
       <!-- Lab -->
@@ -1265,14 +1291,9 @@
       <div class="section-line"></div>
     </div>
 
-    <div class="upload-notice">
-      <strong>📸 How to add conference photos:</strong>
-      Create a folder called <code>photos/conferences/</code> and add photos named like <code>igarss2018.jpg</code>, <code>igarss2019.jpg</code>, etc.
-    </div>
-
     <div class="conf-item card">
       <div class="conf-photo">
-        <img src="photos/conferences/igarss2018.jpg" alt="IGARSS 2018"
+        <img src="photos/conferences/igarss_2018.jpg" alt="IGARSS 2018"
              onerror="this.style.display='none';this.parentElement.style.background='var(--navy-light)';this.parentElement.innerHTML+='<div style=\'height:100%;display:flex;align-items:center;justify-content:center;font-size:2rem;\'>🇪🇸</div>';" />
       </div>
       <div class="conf-info">
@@ -1284,7 +1305,7 @@
 
     <div class="conf-item card">
       <div class="conf-photo">
-        <img src="photos/conferences/igarss2019.jpg" alt="IGARSS 2019"
+        <img src="photos/conferences/igarss_2019.jpg" alt="IGARSS 2019"
              onerror="this.style.display='none';this.parentElement.style.background='var(--navy-light)';this.parentElement.innerHTML+='<div style=\'height:100%;display:flex;align-items:center;justify-content:center;font-size:2rem;\'>🇯🇵</div>';" />
       </div>
       <div class="conf-info">
@@ -1329,6 +1350,44 @@
         <div class="conf-detail">Invited speaker on Remote Sensing of Cryosphere. Presented on SAR-based applications for snowpack monitoring and water resource management.</div>
       </div>
     </div>
+
+    <div class="conf-item-wide card" style="padding:22px 24px;">
+      <div class="conf-photo-strip">
+        <img src="photos/conferences/indo_german-1.jpg" alt="Indo-German Frontiers 1" onclick="openLightbox('photos/conferences/indo_german-1.jpg','Indo-German Frontiers of Engineering Symposium')" onerror="this.remove()">
+        <img src="photos/conferences/indo_german-2.jpg" alt="Indo-German Frontiers 2" onclick="openLightbox('photos/conferences/indo_german-2.jpg','Indo-German Frontiers of Engineering Symposium')" onerror="this.remove()">
+        <img src="photos/conferences/indo_german.jpeg" alt="Indo-German Frontiers 3" onclick="openLightbox('photos/conferences/indo_german.jpeg','Indo-German Frontiers of Engineering Symposium')" onerror="this.remove()">
+      </div>
+      <div class="conf-info">
+        <div class="conf-year">Symposium</div>
+        <div class="conf-name">Indo-German Frontiers of Engineering Symposium</div>
+        <div class="conf-detail">Selected participant at the prestigious Indo-German Frontiers of Engineering Symposium, bringing together leading engineers and scientists from India and Germany.</div>
+      </div>
+    </div>
+
+    <div class="conf-item-wide card" style="padding:22px 24px;">
+      <div class="conf-photo-strip">
+        <img src="photos/conferences/geosmart_india_1.jpg" alt="GeoSmart India 1" onclick="openLightbox('photos/conferences/geosmart_india_1.jpg','GeoSmart India 2024')" onerror="this.remove()">
+        <img src="photos/conferences/geosmart_india_2.png.jpg" alt="GeoSmart India 2" onclick="openLightbox('photos/conferences/geosmart_india_2.png.jpg','GeoSmart India 2024')" onerror="this.remove()">
+        <img src="photos/conferences/geosmart_india.png" alt="GeoSmart India 3" onclick="openLightbox('photos/conferences/geosmart_india.png','GeoSmart India 2024')" onerror="this.remove()">
+      </div>
+      <div class="conf-info">
+        <div class="conf-year">2024 · Solafune / JAXA</div>
+        <div class="conf-name">GeoSmart India 2024</div>
+        <div class="conf-detail">Represented Solafune Inc. at GeoSmart India 2024, showcasing satellite analytics capabilities under JAXA partnership funding.</div>
+      </div>
+    </div>
+
+    <div class="conf-item-wide card" style="padding:22px 24px;">
+      <div class="conf-photo-strip">
+        <img src="photos/conferences/thai_spaace_1.JPG" alt="Thailand Space Expo 1" onclick="openLightbox('photos/conferences/thai_spaace_1.JPG','Thailand Space Expo 2025')" onerror="this.remove()">
+        <img src="photos/conferences/thai_space_2.JPG" alt="Thailand Space Expo 2" onclick="openLightbox('photos/conferences/thai_space_2.JPG','Thailand Space Expo 2025')" onerror="this.remove()">
+      </div>
+      <div class="conf-info">
+        <div class="conf-year">2025 · Solafune</div>
+        <div class="conf-name">Thailand Space Expo 2025</div>
+        <div class="conf-detail">Delivered a three-minute pitch for Solafune Inc. at Thailand Space Expo 2025, presenting satellite-based analytics solutions to an international space industry audience.</div>
+      </div>
+    </div>
   </section>
 
   <!-- SOCIAL -->
@@ -1358,7 +1417,7 @@
       <a class="social-btn" href="https://medium.com/@akshaypatil05" target="_blank" rel="noopener">
         <span class="s-icon">✍️</span> Medium
       </a>
-      <a class="social-btn" href="https://github.com/" target="_blank" rel="noopener">
+      <a class="social-btn" href="https://github.com/akshaypatil05" target="_blank" rel="noopener">
         <span class="s-icon">🐙</span> GitHub
       </a>
       <a class="social-btn" href="mailto:akshapatil1989@gmail.com">
@@ -1440,15 +1499,24 @@
     lbImg.src = '';
   }
 
-  // Gallery filter
-  function filterGallery(gallery, cat, btn) {
+  // Gallery filter (select dropdown)
+  function filterGallerySelect(gallery, cat) {
     const grid = document.getElementById(gallery + '-gallery-grid');
-    const items = grid.querySelectorAll('.gallery-item');
-    items.forEach(item => {
+    grid.querySelectorAll('.gallery-item').forEach(item => {
       item.style.display = (cat === 'all' || item.dataset.cat === cat) ? 'block' : 'none';
     });
-    btn.closest('.gallery-tabs').querySelectorAll('.gallery-tab').forEach(t => t.classList.remove('active'));
-    btn.classList.add('active');
+  }
+
+  // Gallery filter (legacy tab support)
+  function filterGallery(gallery, cat, btn) {
+    const grid = document.getElementById(gallery + '-gallery-grid');
+    grid.querySelectorAll('.gallery-item').forEach(item => {
+      item.style.display = (cat === 'all' || item.dataset.cat === cat) ? 'block' : 'none';
+    });
+    if (btn) {
+      btn.closest('.gallery-tabs').querySelectorAll('.gallery-tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+    }
   }
 </script>
 
